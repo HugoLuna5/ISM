@@ -21,7 +21,8 @@ class CreateClientsTable extends Migration
             $table->enum('gender', ['Masculino', 'Femenino']);
             $table->string('email')->nullable();
             $table->string('phone', 12)->nullable();
-            $table->double('credit')->nullable();
+            $table->double('current_credit')->nullable();
+            $table->double('max_credit')->nullable();
             $table->timestamps();
         });
     }
